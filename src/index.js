@@ -8,11 +8,13 @@ import Estadopedido from "./Estadopedido";
 import Carrito from "./Carrito";
 import CategoriasLocales from "./Categoriaslocales";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavbarBrand } from 'react-bootstrap';
+import CategoriasLocales_Bembos from './Categorialocales_Bembos';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
-    <><Navbar_Restaurante/>
-    <CategoriasLocales/>
+    <>
+    <CategoriasLocales_Bembos/>
 </>);

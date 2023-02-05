@@ -26,7 +26,7 @@ export function Navbar_Restaurante(){
         <div className="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
           <div className="input-group">
             <span className="border-warning input-group-text bg-warning text-white"><i className="fa-solid fa-magnifying-glass" /></span>
-            <input type="text" className="form-control border-warning" style={{color: '#7a7a7a'}} />
+            <input type="text" className="form-control border-warning" style={{color: '#f37a27'}} />
             <button className="btn btn-warning text-white">Search</button>
           </div>
         </div>
@@ -34,7 +34,7 @@ export function Navbar_Restaurante(){
           <div className="ms-auto d-none d-lg-block">
             <div className="input-group">
               <span className="border-warning input-group-text bg-warning text-white"><i className="fa-solid fa-magnifying-glass" /></span>
-              <input type="text" className="form-control border-warning" style={{color: '#7a7a7a'}} />
+              <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} />
               <button className="btn btn-warning text-white">Search</button>
             </div>
           </div>

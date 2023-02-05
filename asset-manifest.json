@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/ec1-nota2/static/css/main.d202a4d0.css",
-    "main.js": "/ec1-nota2/static/js/main.cdfd713b.js",
+    "main.css": "/ec1-nota2/static/css/main.1a32f394.css",
+    "main.js": "/ec1-nota2/static/js/main.d68ea204.js",
+    "static/media/inkachips.PNG": "/ec1-nota2/static/media/inkachips.33ce70ccfd8172c10b32.PNG",
     "static/media/Bembos.png": "/ec1-nota2/static/media/Bembos.b4fea98bf28df5185f26.png",
+    "static/media/cheesefingers.PNG": "/ec1-nota2/static/media/cheesefingers.41613b24e4608124f273.PNG",
+    "static/media/hamburguesaparrila.jpg": "/ec1-nota2/static/media/hamburguesaparrila.96a275f6aa51a3898ba5.jpg",
+    "static/media/hamburguesafrancesa.jpg": "/ec1-nota2/static/media/hamburguesafrancesa.0991d5e02874a8d03345.jpg",
+    "static/media/hamburguesa.jpg": "/ec1-nota2/static/media/hamburguesa.8b86a7f52c41aabb175e.jpg",
+    "static/media/hamburguesachuevo.jpg": "/ec1-nota2/static/media/hamburguesachuevo.460a6c62c9dafd4fc0c7.jpg",
+    "static/media/nuggets.jpg": "/ec1-nota2/static/media/nuggets.7fe00e7d3c1ce7c49dba.jpg",
     "static/media/Starbucks_Corporation_Logo_2011.svg.png": "/ec1-nota2/static/media/Starbucks_Corporation_Logo_2011.svg.b84a12ab6cc688676e55.png",
     "static/media/Listo.jpg": "/ec1-nota2/static/media/Listo.8f7c2fa5f75d9702f9c7.jpg",
+    "static/media/quesotocino.png": "/ec1-nota2/static/media/quesotocino.7848a407d06751cc505a.png",
+    "static/media/gaseosa.jpg": "/ec1-nota2/static/media/gaseosa.2e9035dd2712394a7444.jpg",
+    "static/media/papasjfif.jfif": "/ec1-nota2/static/media/papasjfif.38601e61f8d09d83e58e.jfif",
     "index.html": "/ec1-nota2/index.html",
-    "main.d202a4d0.css.map": "/ec1-nota2/static/css/main.d202a4d0.css.map",
-    "main.cdfd713b.js.map": "/ec1-nota2/static/js/main.cdfd713b.js.map"
+    "main.1a32f394.css.map": "/ec1-nota2/static/css/main.1a32f394.css.map",
+    "main.d68ea204.js.map": "/ec1-nota2/static/js/main.d68ea204.js.map"
   },
   "entrypoints": [
-    "static/css/main.d202a4d0.css",
-    "static/js/main.cdfd713b.js"
+    "static/css/main.1a32f394.css",
+    "static/js/main.d68ea204.js"
   ]
 }

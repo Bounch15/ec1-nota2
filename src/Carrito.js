@@ -1,4 +1,12 @@
 import './Styles_Carrito.css';
+import bembos from './imagenes//logosrestaurantes/Bembos.png'
+import chifaexpress from './imagenes//logosrestaurantes/chifa express.png'
+import listo from './imagenes//logosrestaurantes/Listo.jpg'
+import marianne from './imagenes//logosrestaurantes/Marianne.png'
+import mrsushi from './imagenes//logosrestaurantes/MrSushi.png'
+import neverafit from './imagenes/logosrestaurantes/nevera fit.png'
+import starbucks from './imagenes//logosrestaurantes/Starbucks_Corporation_Logo_2011.svg.png'
+
 export function Carrito(){
 
     return       <section className="h-100 h-custom">
@@ -25,7 +33,7 @@ export function Carrito(){
                       <div className="d-flex justify-content-between">
                         <div className="d-flex flex-row align-items-center">
                           <div>
-                            <img src="/logosrestaurantes/Bembos.png" className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
+                            <img src={bembos} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
                           </div>
                           <div className="ms-3">
                             <h5>Hamburgesa cheese</h5>
@@ -49,7 +57,7 @@ export function Carrito(){
                       <div className="d-flex justify-content-between">
                         <div className="d-flex flex-row align-items-center">
                           <div>
-                            <img src="logosrestaurantes/chifa express.png" className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
+                            <img src={chifaexpress} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
                           </div>
                           <div className="ms-3">
                             <h5>Chaufa de pollo </h5>
@@ -73,7 +81,7 @@ export function Carrito(){
                       <div className="d-flex justify-content-between">
                         <div className="d-flex flex-row align-items-center">
                           <div>
-                            <img src="logosrestaurantes/Listo.jpg" className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
+                            <img src={listo} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
                           </div>
                           <div className="ms-3">
                             <h5>Gaseosa Inka Cola</h5>
@@ -97,7 +105,7 @@ export function Carrito(){
                       <div className="d-flex justify-content-between">
                         <div className="d-flex flex-row align-items-center">
                           <div>
-                            <img src="logosrestaurantes/nevera fit.png" className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
+                            <img src={neverafit} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
                           </div>
                           <div className="ms-3">
                             <h5>Tres leches</h5>

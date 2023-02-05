@@ -1,71 +1,61 @@
-
+import './Styles_Navbar.css'
 export function Navbar_Restaurante(){
 
 
-
-    return <nav className="navbar navbar-expand-lg bg-body-tertiary">
-    <div className="container-fluid">
-      <nav className="navbar bg-body-tertiary">
-        <div className="container">
-          <a className="navbar-brand" href="/index.html">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Universidad_de_Lima_logo.png" alt="Bootstrap" width={50} height={50} />
-          </a>
-        </div>
-      </nav>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <nav className="navbar bg-body-tertiary">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#!">
-                <img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="Logo" width={35} height={35} className="d-inline-block align-text-top " />
-                <h5 className="fw-bold mb-2 text-uppercase">CARRITO</h5>
-              </a>
-            </div>
-          </nav>
-          <nav className="navbar bg-body-tertiary">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#!">
-                <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/checklist-icon.png" alt="Logo" width={35} height={35} className="d-inline-block align-text-top" />
-                <h5 className="fw-bold mb-2 text-uppercase">LISTA DE PEDIDOS</h5>
-              </a>
-            </div>
-          </nav>
-          <div className="btn-group">
-            <a type="button" className="btn btn btn-light fw-bold mb-2" href="#!">CATEGORIAS</a>
-            <button type="button" className="btn btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-              <span className="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#!#">Fast Food</a></li>
-              <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#!">Cafeterias</a></li>
-              <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#!">Comida asiatica</a></li>
-              <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#!">Kiosko</a></li>
-            </ul>
+    return <div>
+    <div className="superNav border-bottom py-2 bg-light">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+            <select className="me-3 border-0 bg-light">
+              <option value="en-us">EN-US</option>
+            </select>
+            <span className="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>localesulima@ulima.edu.pe</strong></span>
+            <span className="me-3"><i className="fa-solid fa-phone me-1 text-warning" /> <strong>+51-980905072</strong></span>
           </div>
-          <nav className="navbar bg-body-tertiary">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="#!"><h5 className="fw-bold mb-2 text-uppercase">RECLAMOS</h5></a>
-            </div>
-          </nav>
-        </ul>
-        <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Codigo de pedido" aria-label="Search" />
-          <a className="btn btn-outline-success" href="#!" role="button">BUSCAR</a>           
-        </form>
-        <nav className="navbar bg-body-tertiary">
-          <form className="container-fluid justify-content-start">
-            <a className="btn btn-primary" href="#!" role="button">Log Out</a>
-          </form>
-        </nav>
+        </div>
       </div>
     </div>
+    <nav className="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+      <div className="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Universidad_de_Lima_logo.png" alt="Bootstrap" width="50" height="50"/>
+        <a className="navbar-brand" href="#"><i className="fa-solid fa-shop me-2" /> <strong>Locales UL</strong></a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+          <div className="input-group">
+            <span className="border-warning input-group-text bg-warning text-white"><i className="fa-solid fa-magnifying-glass" /></span>
+            <input type="text" className="form-control border-warning" style={{color: '#7a7a7a'}} />
+            <button className="btn btn-warning text-white">Search</button>
+          </div>
+        </div>
+        <div className=" collapse navbar-collapse" id="navbarNavDropdown">
+          <div className="ms-auto d-none d-lg-block">
+            <div className="input-group">
+              <span className="border-warning input-group-text bg-warning text-white"><i className="fa-solid fa-magnifying-glass" /></span>
+              <input type="text" className="form-control border-warning" style={{color: '#7a7a7a'}} />
+              <button className="btn btn-warning text-white">Search</button>
+            </div>
+          </div>
+          <ul className="navbar-nav ms-auto ">
+            <li className="nav-item">
+              <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">Ofertas</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link mx-2 text-uppercase" href="#">Locales</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link mx-2 text-uppercase" href="#"><i className="fa-solid fa-cart-shopping me-1" /> Carrito</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link mx-2 text-uppercase" href="#"><i className="fa-solid fa-circle-user me-1" />Cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+  </div>
 
 
 }

@@ -1,0 +1,108 @@
+body {
+
+    	/* fallback for old browsers */
+	background: #6a11cb;
+	
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+.login  {
+    background-color: #0057fc;
+    color: white;   
+}
+
+.gradient-custom {
+	/* fallback for old browsers */
+	background: #6a11cb;
+	
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+	}
+
+	div.parentElement{text-align: center;}
+
+	.btn-light{
+		height: 60px;	
+		display: inline-block;
+		line-height: 40px;
+		text-align: center;
+	}
+	
+
+.mb-30 {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.card-img-tiles {
+    display: block;
+    border-bottom: 1px solid #e1e7ec;
+}
+
+a {
+    color: #0da9ef;
+    text-decoration: none !important;
+}
+
+.card-img-tiles>.inner {
+    display: table;
+    width: 100%;
+}
+
+.card-img-tiles .main-img, .card-img-tiles .thumblist {
+    display: table-cell;
+    width: 65%;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.card-img-tiles .main-img>img:last-child, .card-img-tiles .thumblist>img:last-child {
+    margin-bottom: 0;
+}
+
+.card-img-tiles .main-img>img, .card-img-tiles .thumblist>img {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.thumblist {
+    width: 35%;
+    border-left: 1px solid #e1e7ec !important;
+    display: table-cell;
+    width: 65%;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.card-img-tiles .thumblist>img {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .45rem .5rem !important;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+div.parentElement{text-align: center;}
+
+.btn-light{
+    height: 60px;
+
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.navbar{
+    background-color: white;
+}

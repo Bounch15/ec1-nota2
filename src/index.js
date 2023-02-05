@@ -6,13 +6,13 @@ import Login_Page from "./Login_Page";
 import Navbar_Restaurante from "./Navbar";
 import Estadopedido from "./Estadopedido";
 import Carrito from "./Carrito";
-import {Saludar} from "./Categorias"
+import CategoriasLocales from "./Categoriaslocales";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
-    <>
-    
-    <Carrito/>
+    <><Navbar_Restaurante/>
+    <CategoriasLocales/>
 </>);

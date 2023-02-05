@@ -9,7 +9,7 @@ import papas from './imagenes/platos/papasjfif.jfif'
 import nugguets from './imagenes/platos/nuggets.jpg'
 import inkachips from './imagenes/platos/inkachips.PNG'
 import cheesefingers from './imagenes/platos/cheesefingers.PNG'
-
+import CategoriasLocales from "./CategoriasLocales";
 
 export function CategoriasLocales_Bembos(){
     return <div>
@@ -260,7 +260,6 @@ export function CategoriasLocales_Bembos(){
       </div>
     </div>
   </div>
-
 }
 
 export default CategoriasLocales_Bembos

@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/ec1-nota2/static/css/main.84f76720.css",
-    "main.js": "/ec1-nota2/static/js/main.e1196bb0.js",
+    "main.css": "/ec1-nota2/static/css/main.d202a4d0.css",
+    "main.js": "/ec1-nota2/static/js/main.cdfd713b.js",
+    "static/media/Bembos.png": "/ec1-nota2/static/media/Bembos.b4fea98bf28df5185f26.png",
+    "static/media/Starbucks_Corporation_Logo_2011.svg.png": "/ec1-nota2/static/media/Starbucks_Corporation_Logo_2011.svg.b84a12ab6cc688676e55.png",
+    "static/media/Listo.jpg": "/ec1-nota2/static/media/Listo.8f7c2fa5f75d9702f9c7.jpg",
     "index.html": "/ec1-nota2/index.html",
-    "main.84f76720.css.map": "/ec1-nota2/static/css/main.84f76720.css.map",
-    "main.e1196bb0.js.map": "/ec1-nota2/static/js/main.e1196bb0.js.map"
+    "main.d202a4d0.css.map": "/ec1-nota2/static/css/main.d202a4d0.css.map",
+    "main.cdfd713b.js.map": "/ec1-nota2/static/js/main.cdfd713b.js.map"
   },
   "entrypoints": [
-    "static/css/main.84f76720.css",
-    "static/js/main.e1196bb0.js"
+    "static/css/main.d202a4d0.css",
+    "static/js/main.cdfd713b.js"
   ]
 }

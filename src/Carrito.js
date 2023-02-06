@@ -106,7 +106,7 @@ export function Carrito(){
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase">
+                <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick2 }>
                   <i className="fa-solid fa-circle-user me-1" />
                   LogOut
                 </a>

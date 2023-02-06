@@ -129,7 +129,7 @@ export function CategoriasLocales() {
           <div className="card-body text-center">
             <h4 className="card-title fw-bold mb-2">Bembos</h4>
             <p className="text-muted">Hamburguesas</p>
-            <a className="btn btn-outline-primary btn-sm" href="" data-abc="true" onClick={ butOnClick1 }>
+            <a className="btn btn-outline-primary btn-sm" data-abc="true" onClick={ butOnClick1 }>
               Ver platos
             </a>
           </div>

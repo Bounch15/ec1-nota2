@@ -1,3 +1,5 @@
+import { Root } from "react-dom/client"
+import { useNavigate } from "react-router-dom"
 import './Styles_Categoriaslocales.css'
 import bembos from './imagenes//logosrestaurantes/Bembos.png'
 import chifaexpress from './imagenes//logosrestaurantes/chifa express.png'
@@ -7,10 +9,31 @@ import mrsushi from './imagenes//logosrestaurantes/MrSushi.png'
 import neverafit from './imagenes/logosrestaurantes/nevera fit.png'
 import starbucks from './imagenes//logosrestaurantes/Starbucks_Corporation_Logo_2011.svg.png'
 
-
-
-
 export function CategoriasLocales() {
+
+  const navigate = useNavigate()
+
+  const butOnClick1 = function() {
+    navigate("/ec1-nota2/CategoriasLocales_Bembos", {
+    }) 
+  }
+  const butOnClick2 = function() {
+    navigate("/ec1-nota2", {
+    }) 
+  }
+  const butOnClick3 = function() {
+    navigate("/ec1-nota2/Estadopedido", {
+    }) 
+  }
+  const butOnClick4 = function() {
+    navigate("/ec1-nota2/Carrito", {
+    }) 
+  }
+  const butOnClick5 = function() {
+    navigate("/ec1-nota2/CategoriaLocales", {
+    }) 
+  }
+
   return <div>
   <div>
     <div className="superNav border-bottom py-2 bg-light">
@@ -58,9 +81,9 @@ export function CategoriasLocales() {
               <span className="border-warning input-group-text bg-warning text-white">
                 <i className="fa-solid fa-magnifying-glass" />
               </span>
-              <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} />
-              <button className="btn btn-warning text-white">
-                Search
+              <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} placeholder="Codigo de pedido" />
+              <button className="btn btn-warning text-white" onClick={ butOnClick3 }>
+                Buscar Pedido
               </button>
             </div>
           </div>
@@ -71,20 +94,20 @@ export function CategoriasLocales() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-2 text-uppercase" href="#">
+              <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick5 }>
                 Locales
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-2 text-uppercase" href="#">
+              <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick4 }>
                 <i className="fa-solid fa-cart-shopping me-1" />
                 Carrito
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-2 text-uppercase" href="#">
+              <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick2 }>
                 <i className="fa-solid fa-circle-user me-1" />
-                Cuenta
+                LogOut
               </a>
             </li>
           </ul>
@@ -106,7 +129,7 @@ export function CategoriasLocales() {
           <div className="card-body text-center">
             <h4 className="card-title fw-bold mb-2">Bembos</h4>
             <p className="text-muted">Hamburguesas</p>
-            <a className="btn btn-outline-primary btn-sm" href="/Bembos.html" data-abc="true">
+            <a className="btn btn-outline-primary btn-sm" href="" data-abc="true" onClick={ butOnClick1 }>
               Ver platos
             </a>
           </div>

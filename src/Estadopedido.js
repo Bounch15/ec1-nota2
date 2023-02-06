@@ -1,5 +1,29 @@
+import { useNavigate } from "react-router-dom"
 import './Styles_Estadopedido.css';
 export function Estadopedido(){
+
+  const navigate = useNavigate()
+
+  const butOnClick1 = function() {
+    navigate("/ec1-nota2/CategoriasLocales_Bembos", {
+    }) 
+  }
+  const butOnClick2 = function() {
+    navigate("/ec1-nota2", {
+    }) 
+  }
+  const butOnClick3 = function() {
+    navigate("/ec1-nota2/Estadopedido", {
+    }) 
+  }
+  const butOnClick4 = function() {
+    navigate("/ec1-nota2/Carrito", {
+    }) 
+  }
+  const butOnClick5 = function() {
+    navigate("/ec1-nota2/CategoriaLocales", {
+    }) 
+  }
 
     return <div>
     <div>
@@ -48,9 +72,9 @@ export function Estadopedido(){
                 <span className="border-warning input-group-text bg-warning text-white">
                   <i className="fa-solid fa-magnifying-glass" />
                 </span>
-                <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} />
-                <button className="btn btn-warning text-white">
-                  Search
+                <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} placeholder="Codigo de pedido" />
+                <button className="btn btn-warning text-white" onClick={ butOnClick3 }>
+                  Buscar Pedido
                 </button>
               </div>
             </div>
@@ -61,20 +85,20 @@ export function Estadopedido(){
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase" href="#">
+                <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick5 }>
                   Locales
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase" href="#">
+                <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick4 }>
                   <i className="fa-solid fa-cart-shopping me-1" />
                   Carrito
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase" href="#">
+                <a className="nav-link mx-2 text-uppercase" onClick={ butOnClick2 }>
                   <i className="fa-solid fa-circle-user me-1" />
-                  Cuenta
+                  LogOut
                 </a>
               </li>
             </ul>

@@ -10,7 +10,7 @@ import Estadopedido from "./Estadopedido";
 import Carrito from "./Carrito";
 import CategoriasLocales from "./CategoriasLocales";
 import { NavbarBrand } from 'react-bootstrap';
-import CategoriasLocales_Bembos from './Categorialocales_Bembos';
+import CategoriasLocales_Bembos from './CategoriasLocales_Bembos';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -21,7 +21,12 @@ root.render(
       <Routes>
         <Route path='/ec1-nota2/' element={ <Login_Page/> } />
         <Route path='/ec1-nota2/CategoriaLocales' element={ <CategoriasLocales/> } />
+        <Route path='/ec1-nota2/CategoriasLocales_Bembos' element={ <CategoriasLocales_Bembos/> } />
+        <Route path='/ec1-nota2/Estadopedido' element={ <Estadopedido/> } />
+        <Route path='/ec1-nota2/Carrito' element={ <Carrito/> } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
+
+//<><Carrito/></>

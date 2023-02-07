@@ -11,6 +11,9 @@ import Carrito from "./Carrito";
 import CategoriasLocales from "./CategoriasLocales";
 import { NavbarBrand } from 'react-bootstrap';
 import CategoriasLocales_Bembos from './CategoriasLocales_Bembos';
+import CategoriasLocales_Bembos_Hamburguesas from './CategoriasLocales_Bembos_Hamburguesas';
+import CategoriasLocales_Bembos_Complementos from './CategoriasLocales_Bembos_Complementos';
+import CategoriasLocales_Bembos_Bebidas from './CategoriasLocales_Bembos_Bebidas';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -22,6 +25,9 @@ root.render(
         <Route path='/ec1-nota2/' element={ <Login_Page/> } />
         <Route path='/ec1-nota2/CategoriaLocales' element={ <CategoriasLocales/> } />
         <Route path='/ec1-nota2/CategoriasLocales_Bembos' element={ <CategoriasLocales_Bembos/> } />
+        <Route path='/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas' element={ <CategoriasLocales_Bembos_Hamburguesas/> } />
+        <Route path='/ec1-nota2/CategoriasLocales_Bembos_Complementos' element={ <CategoriasLocales_Bembos_Complementos/> } />
+        <Route path='/ec1-nota2/CategoriasLocales_Bembos_Bebidas' element={ <CategoriasLocales_Bembos_Bebidas/> } />
         <Route path='/ec1-nota2/Estadopedido' element={ <Estadopedido/> } />
         <Route path='/ec1-nota2/Carrito' element={ <Carrito/> } />
       </Routes>

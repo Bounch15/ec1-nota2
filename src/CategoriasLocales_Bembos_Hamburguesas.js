@@ -12,42 +12,42 @@ import inkachips from './imagenes/platos/inkachips.PNG'
 import cheesefingers from './imagenes/platos/cheesefingers.PNG'
 import CategoriasLocales from "./CategoriasLocales";
 
-export function CategoriasLocales_Bembos(){
+export function CategoriasLocales_Bembos_Hamburguesas(){
 
   const navigate = useNavigate()
-  
+
   const butOnClick1 = function() {
-    navigate("/ec1-nota2/CategoriasLocales_Bembos", {
-    }) 
-  }
-  const butOnClick2 = function() {
-    navigate("/ec1-nota2", {
-    }) 
-  }
-  const butOnClick3 = function() {
-    navigate("/ec1-nota2/Estadopedido", {
-    }) 
-  }
-  const butOnClick4 = function() {
-    navigate("/ec1-nota2/Carrito", {
-    }) 
-  }
-  const butOnClick5 = function() {
-    navigate("/ec1-nota2/CategoriaLocales", {
-    }) 
-  }
-  const butOnClick6 = function() {
-    navigate("/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas", {
-    }) 
-  }
-  const butOnClick7 = function() {
-    navigate("/ec1-nota2/CategoriasLocales_Bembos_Complementos", {
-    }) 
-  }
-  const butOnClick8 = function() {
-    navigate("/ec1-nota2/CategoriasLocales_Bembos_Bebidas", {
-    }) 
-  }
+      navigate("/ec1-nota2/CategoriasLocales_Bembos", {
+      }) 
+    }
+    const butOnClick2 = function() {
+      navigate("/ec1-nota2", {
+      }) 
+    }
+    const butOnClick3 = function() {
+      navigate("/ec1-nota2/Estadopedido", {
+      }) 
+    }
+    const butOnClick4 = function() {
+      navigate("/ec1-nota2/Carrito", {
+      }) 
+    }
+    const butOnClick5 = function() {
+      navigate("/ec1-nota2/CategoriaLocales", {
+      }) 
+    }
+    const butOnClick6 = function() {
+      navigate("/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas", {
+      }) 
+    }
+    const butOnClick7 = function() {
+      navigate("/ec1-nota2/CategoriasLocales_Bembos_Complementos", {
+      }) 
+    }
+    const butOnClick8 = function() {
+      navigate("/ec1-nota2/CategoriasLocales_Bembos_Bebidas", {
+      }) 
+    }
 
     return <div>
     <div>
@@ -133,7 +133,7 @@ export function CategoriasLocales_Bembos(){
 
     <div className="dropdown">
         <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Categorias de bembos
+          Hamburguesas
         </button>
         <ul className="dropdown-menu">
           <li><a className="dropdown-item" onClick={ butOnClick6 }>Hamburguesas</a></li>
@@ -144,24 +144,6 @@ export function CategoriasLocales_Bembos(){
 
     <div className="container mt-100">
       <div className="row">
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={gaseosa} alt="Category" />
-                </div>
-              </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Gaseosa Personal</h4>
-              <p className="text-muted">S/.8</p>
-              <a className="btn btn-outline-primary btn-sm" href="/Bembos.html" data-abc="true">
-                Agregar al carrito
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="col-md-4 col-sm-6">
           <div className="card mb-30">
             <a className="card-img-tiles" href="#" data-abc="true">
@@ -234,81 +216,9 @@ export function CategoriasLocales_Bembos(){
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={papas} alt="Category" />
-                </div>
-              </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Papas</h4>
-              <p className="text-muted">S/5.9</p>
-              <a className="btn btn-outline-primary btn-sm" href="#" data-abc="true">
-                Agregar al carrito
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={nugguets} alt="Category" />
-                </div>
-              </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Nuggets</h4>
-              <p className="text-muted">S/10.9</p>
-              <a className="btn btn-outline-primary btn-sm" href="#" data-abc="true">
-                Agregar al carrito
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={inkachips} alt="Category" />
-                </div>
-              </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Inka Chips</h4>
-              <p className="text-muted">S/3.9</p>
-              <a className="btn btn-outline-primary btn-sm" href="#" data-abc="true">
-                Agregar al carrito
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={cheesefingers} alt="Category" />
-                </div>
-              </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Cheese Fingers</h4>
-              <p className="text-muted">S/7.9</p>
-              <a className="btn btn-outline-primary btn-sm" href="#" data-abc="true">
-                Agregar al carrito
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 }
 
-export default CategoriasLocales_Bembos
+export default CategoriasLocales_Bembos_Hamburguesas

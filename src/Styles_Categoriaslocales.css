@@ -106,3 +106,9 @@ div.parentElement{text-align: center;}
 .navbar{
     background-color: white;
 }
+
+.dropdown{
+    margin-top: 15px;
+    text-align: center;
+    
+}

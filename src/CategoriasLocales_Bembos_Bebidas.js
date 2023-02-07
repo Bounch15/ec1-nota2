@@ -105,7 +105,7 @@ export function CategoriasLocales_Bembos_Bebidas(){
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">
-                  Ofertas
+                  Soporte
                 </a>
               </li>
               <li className="nav-item">
@@ -136,6 +136,7 @@ export function CategoriasLocales_Bembos_Bebidas(){
           Bebidas
         </button>
         <ul className="dropdown-menu">
+          <li><a className="dropdown-item" onClick={ butOnClick1 }>Todas las categorias</a></li>
           <li><a className="dropdown-item" onClick={ butOnClick6 }>Hamburguesas</a></li>
           <li><a className="dropdown-item" onClick={ butOnClick7 }>Complementos</a></li>
           <li><a className="dropdown-item" onClick={ butOnClick8 }>Bebidas</a></li>

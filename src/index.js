@@ -14,6 +14,7 @@ import CategoriasLocales_Bembos from './CategoriasLocales_Bembos';
 import CategoriasLocales_Bembos_Hamburguesas from './CategoriasLocales_Bembos_Hamburguesas';
 import CategoriasLocales_Bembos_Complementos from './CategoriasLocales_Bembos_Complementos';
 import CategoriasLocales_Bembos_Bebidas from './CategoriasLocales_Bembos_Bebidas';
+import Soporte from './Soporte';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -28,6 +29,7 @@ root.render(
         <Route path='/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas' element={ <CategoriasLocales_Bembos_Hamburguesas/> } />
         <Route path='/ec1-nota2/CategoriasLocales_Bembos_Complementos' element={ <CategoriasLocales_Bembos_Complementos/> } />
         <Route path='/ec1-nota2/CategoriasLocales_Bembos_Bebidas' element={ <CategoriasLocales_Bembos_Bebidas/> } />
+        <Route path='/ec1-nota2/Soporte' element={ <Soporte/> } />
         <Route path='/ec1-nota2/Estadopedido' element={ <Estadopedido/> } />
         <Route path='/ec1-nota2/Carrito' element={ <Carrito/> } />
       </Routes>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Root } from "react-dom/client"
 import { useNavigate } from "react-router-dom"
 import './Styles_Categoriaslocales.css'
@@ -31,6 +32,10 @@ export function CategoriasLocales() {
   }
   const butOnClick5 = function() {
     navigate("/ec1-nota2/CategoriaLocales", {
+    }) 
+  }
+  const butOnClick6 = function() {
+    navigate("/ec1-nota2/Soporte", {
     }) 
   }
 
@@ -81,7 +86,7 @@ export function CategoriasLocales() {
               <span className="border-warning input-group-text bg-warning text-white">
                 <i className="fa-solid fa-magnifying-glass" />
               </span>
-              <input type="text" className="form-control border-warning" style={{color: '#f37a27s'}} placeholder="Codigo de pedido" />
+              <input type="text" className="form-control border-warning"  style={{color: '#f37a27s'}} placeholder="Codigo de pedido" />
               <button className="btn btn-warning text-white" onClick={ butOnClick3 }>
                 Buscar Pedido
               </button>
@@ -89,8 +94,8 @@ export function CategoriasLocales() {
           </div>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">
-                Ofertas
+              <a className="nav-link mx-2 text-uppercase active" aria-current="page" onClick={ butOnClick6 }>
+                Soporte
               </a>
             </li>
             <li className="nav-item">

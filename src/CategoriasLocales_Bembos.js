@@ -105,7 +105,7 @@ export function CategoriasLocales_Bembos(){
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">
-                  Ofertas
+                  Soporte
                 </a>
               </li>
               <li className="nav-item">
@@ -133,7 +133,7 @@ export function CategoriasLocales_Bembos(){
 
     <div className="dropdown">
         <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Categorias de bembos
+          Todas las categorias
         </button>
         <ul className="dropdown-menu">
           <li><a className="dropdown-item" onClick={ butOnClick6 }>Hamburguesas</a></li>

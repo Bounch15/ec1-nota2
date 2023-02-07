@@ -24,6 +24,10 @@ export function Estadopedido(){
     navigate("/ec1-nota2/CategoriaLocales", {
     }) 
   }
+  const butOnClick6 = function() {
+    navigate("/ec1-nota2/Soporte", {
+    }) 
+  }
 
     return <div>
     <div>
@@ -80,8 +84,8 @@ export function Estadopedido(){
             </div>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">
-                  Ofertas
+                <a className="nav-link mx-2 text-uppercase active" aria-current="page" onClick={ butOnClick5 }>
+                  Soporte
                 </a>
               </li>
               <li className="nav-item">

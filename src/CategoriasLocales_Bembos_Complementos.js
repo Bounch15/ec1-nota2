@@ -48,6 +48,10 @@ export function CategoriasLocales_Bembos_Complementos(){
     navigate("/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas", {
     }) 
   }
+  const butOnClick9 = function() {
+    navigate("/ec1-nota2/Soporte", {
+    }) 
+  }
 
     return <div>
     <div>
@@ -104,8 +108,8 @@ export function CategoriasLocales_Bembos_Complementos(){
             </div>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link mx-2 text-uppercase active" aria-current="page" href="#">
-                  OSoporte
+                <a className="nav-link mx-2 text-uppercase active" aria-current="page" onClick={ butOnClick5 }>
+                  Soporte
                 </a>
               </li>
               <li className="nav-item">

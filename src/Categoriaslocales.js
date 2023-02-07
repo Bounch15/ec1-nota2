@@ -94,7 +94,7 @@ export function CategoriasLocales() {
           </div>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link mx-2 text-uppercase active" aria-current="page" onClick={ butOnClick6 }>
+              <a className="nav-link mx-2 text-uppercase active" aria-current="page" onClick={ butOnClick6}>
                 Soporte
               </a>
             </li>

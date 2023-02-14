@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react"
 import { Root } from "react-dom/client"
 import { useNavigate } from "react-router-dom"
 import './Styles_Categoriaslocales.css'
@@ -9,8 +10,10 @@ import marianne from './imagenes//logosrestaurantes/Marianne.png'
 import mrsushi from './imagenes//logosrestaurantes/MrSushi.png'
 import neverafit from './imagenes/logosrestaurantes/nevera fit.png'
 import starbucks from './imagenes//logosrestaurantes/Starbucks_Corporation_Logo_2011.svg.png'
+import Estadopedido from "./Estadopedido";
 
-export function CategoriasLocales() {
+
+export function CategoriasLocales(props) {
 
   const navigate = useNavigate()
 
@@ -22,22 +25,80 @@ export function CategoriasLocales() {
     navigate("/ec1-nota2", {
     }) 
   }
-  const butOnClick3 = function() {
-    navigate("/ec1-nota2/Estadopedido", {
-    }) 
-  }
   const butOnClick4 = function() {
     navigate("/ec1-nota2/Carrito", {
     }) 
   }
   const butOnClick5 = function() {
-    navigate("/ec1-nota2/CategoriaLocales", {
+    navigate("/ec1-nota2/CategoriasLocales", {
     }) 
   }
   const butOnClick6 = function() {
     navigate("/ec1-nota2/Soporte", {
     }) 
   }
+
+
+  const codigopedidoHttp = async function(codigopedido) {
+
+    const response = await fetch(
+        "http://localhost:8000/endpoints/codigopedido",
+        {
+            method : "POST",
+            body : JSON.stringify(
+                { 
+                    codigopedido : codigopedido
+                }
+            )
+        }
+    )
+    const data = await response.json()
+
+    return data.error
+}
+
+const onCodigoPedidoOk = async function(
+    codigopedido
+) {
+    const error = await codigopedidoHttp(codigopedido)
+    if (error === "") {
+
+        const dataCodigoPedido = {
+            codigopedido : codigopedido,
+        }
+
+        const dataUsuarioJSON = JSON.stringify(dataCodigoPedido)
+
+        sessionStorage.setItem("DATA_USUARIO", dataUsuarioJSON)
+
+        navigate("/ec1-nota2/Estadopedido", {
+            state : {
+                codigopedido : codigopedido
+            }
+        })
+    }else {
+        console.error(error)
+        navigate("/ec1-nota2/Estadopedido_Error", {
+          state : {
+              codigopedido : codigopedido
+          }
+        })
+        
+    }
+}
+
+
+const [codigopedido, setCodigoPedido] = useState("")
+
+const butOnClickCodigoPedido = function(props) {
+    console.log("codigopedido:", codigopedido)
+    onCodigoPedidoOk(codigopedido)        
+}
+
+
+
+
+
 
   return <div>
   <div>
@@ -86,8 +147,9 @@ export function CategoriasLocales() {
               <span className="border-warning input-group-text bg-warning text-white">
                 <i className="fa-solid fa-magnifying-glass" />
               </span>
-              <input type="text" className="form-control border-warning"  style={{color: '#f37a27s'}} placeholder="Codigo de pedido" />
-              <button className="btn btn-warning text-white" onClick={ butOnClick3 }>
+              <input type="text" className="form-control border-warning"  style={{color: '#f37a27s'}} placeholder="Codigo de pedido" value={ codigopedido }
+                            onChange={ function(evt) { setCodigoPedido(evt.target.value) } }/>
+              <button className="btn btn-warning text-white" onClick={ butOnClickCodigoPedido}>
                 Buscar Pedido
               </button>
             </div>
@@ -243,3 +305,5 @@ export function CategoriasLocales() {
 }
 
 export default CategoriasLocales
+
+

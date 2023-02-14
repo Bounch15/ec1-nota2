@@ -33,7 +33,7 @@ export function CategoriasLocales_Bembos_Complementos(){
     }) 
   }
   const butOnClick5 = function() {
-    navigate("/ec1-nota2/CategoriaLocales", {
+    navigate("/ec1-nota2/CategoriasLocales", {
     }) 
   }
   const butOnClick6 = function() {

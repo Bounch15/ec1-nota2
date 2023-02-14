@@ -56,8 +56,6 @@ export function Navbar_Restaurante(){
       </div>
     </nav>
   </div>
-
-
 }
 
 export default Navbar_Restaurante

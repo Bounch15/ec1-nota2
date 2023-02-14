@@ -1,57 +1,35 @@
-import './Styles_Categoriaslocales.css'
 import { useNavigate } from "react-router-dom"
-import quesotocino from './imagenes/platos/quesotocino.png'
-import gaseosa from './imagenes/platos/gaseosa.jpg'
-import hamburguesa from './imagenes/platos/hamburguesa.jpg'
-import hamburguesaparrila from './imagenes/platos/hamburguesaparrila.jpg'
-import hamburguesafrancesa from './imagenes/platos/hamburguesafrancesa.jpg'
-import hamburguesachuevo from './imagenes/platos/hamburguesachuevo.jpg'
-import papas from './imagenes/platos/papasjfif.jfif'
-import nugguets from './imagenes/platos/nuggets.jpg'
-import inkachips from './imagenes/platos/inkachips.PNG'
-import cheesefingers from './imagenes/platos/cheesefingers.PNG'
-import CategoriasLocales from "./CategoriasLocales";
+import './Styles_Estadopedido.css';
+import codigopedido from "./CategoriasLocales";
 
-export function CategoriasLocales_Bembos_Bebidas(){
+export function Estadopedido_Error(){
 
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
-    const butOnClick1 = function() {
-        navigate("/ec1-nota2/CategoriasLocales_Bembos", {
-        }) 
-      }
-      const butOnClick2 = function() {
-        navigate("/ec1-nota2", {
-        }) 
-      }
-      const butOnClick3 = function() {
-        navigate("/ec1-nota2/Estadopedido", {
-        }) 
-      }
-      const butOnClick4 = function() {
-        navigate("/ec1-nota2/Carrito", {
-        }) 
-      }
-      const butOnClick5 = function() {
-        navigate("/ec1-nota2/CategoriasLocales", {
-        }) 
-      }
-      const butOnClick6 = function() {
-        navigate("/ec1-nota2/CategoriasLocales_Bembos_Hamburguesas", {
-        }) 
-      }
-      const butOnClick7 = function() {
-        navigate("/ec1-nota2/CategoriasLocales_Bembos_Complementos", {
-        }) 
-      }
-      const butOnClick8 = function() {
-        navigate("/ec1-nota2/CategoriasLocales_Bembos_Bebidas", {
-        }) 
-      }
-      const butOnClick9 = function() {
-        navigate("/ec1-nota2/Soporte", {
-        }) 
-      }
+  const butOnClick1 = function() {
+    navigate("/ec1-nota2/CategoriasLocales_Bembos", {
+    }) 
+  }
+  const butOnClick2 = function() {
+    navigate("/ec1-nota2", {
+    }) 
+  }
+  const butOnClick3 = function() {
+    navigate("/ec1-nota2/Estadopedido", {
+    }) 
+  }
+  const butOnClick4 = function() {
+    navigate("/ec1-nota2/Carrito", {
+    }) 
+  }
+  const butOnClick5 = function() {
+    navigate("/ec1-nota2/CategoriaLocales", {
+    }) 
+  }
+  const butOnClick6 = function() {
+    navigate("/ec1-nota2/Soporte", {
+    }) 
+  }
 
     return <div>
     <div>
@@ -134,42 +112,50 @@ export function CategoriasLocales_Bembos_Bebidas(){
         </div>
       </nav>
     </div>
-
-    <div className="dropdown">
-        <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Bebidas
-        </button>
-        <ul className="dropdown-menu">
-          <li><a className="dropdown-item" onClick={ butOnClick1 }>Todas las categorias</a></li>
-          <li><a className="dropdown-item" onClick={ butOnClick6 }>Hamburguesas</a></li>
-          <li><a className="dropdown-item" onClick={ butOnClick7 }>Complementos</a></li>
-          <li><a className="dropdown-item" onClick={ butOnClick8 }>Bebidas</a></li>
-        </ul>
-      </div>
-
-    <div className="container mt-100">
-      <div className="row">
-        <div className="col-md-4 col-sm-6">
-          <div className="card mb-30">
-            <a className="card-img-tiles" href="#" data-abc="true">
-              <div className="inner">
-                <div className="main-img">
-                  <img src={gaseosa} alt="Category" />
+    <div>
+      <section className="h-100 h-custom">
+        <div className="container py-5 h-100">
+          <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="col-lg-8 col-xl-6">
+              <div className="card border-top border-bottom border-3" style={{borderColor: '#f37a27 !important'}}>
+                <div className="card-body p-5">
+                  <p className="lead fw-bold mb-5" style={{color: '#f37a27'}}>
+                    Estado de pedido
+                  </p>
+                  <div className="row">
+                    <div className="col mb-3">
+                      <p className="small text-muted mb-1">Fecha</p>
+                      <p>-</p>
+                    </div>
+                    <div className="col mb-3">
+                      <p className="small text-muted mb-1">
+                        Orden Cdg.
+                      </p>
+                      <p>-</p>
+                    </div>
+                  </div>
+                  <div className="mx-n5 px-5 py-4" style={{backgroundColor: '#f2f2f2'}}>
+                    <div className="row">
+                      <div className="col-md-8 col-lg-9">
+                        <p>No se ha encontrado ningun pedido con ese codigo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-4 pt-2 mb-0">
+                    Necesitas ayuda?
+                    <a href="#!" style={{color: '#f37a27'}}>
+                    Contactanos
+                    </a>
+                  </p>
                 </div>
               </div>
-            </a>
-            <div className="card-body text-center">
-              <h4 className="card-title">Gaseosa Personal</h4>
-              <p className="text-muted">S/.8</p>
-              <a className="btn btn-outline-primary btn-sm" href="/Bembos.html" data-abc="true">
-                Agregar al carrito
-              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
+
 }
 
-export default CategoriasLocales_Bembos_Bebidas
+export default Estadopedido_Error

@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import './Styles_Estadopedido.css';
+import codigopedido from "./CategoriasLocales";
+
 export function Estadopedido(){
 
   const navigate = useNavigate()
@@ -129,7 +131,7 @@ export function Estadopedido(){
                       <p className="small text-muted mb-1">
                         Orden Cdg.
                       </p>
-                      <p>012j1gvs356c</p>
+                      <p>{codigopedido}</p>
                     </div>
                   </div>
                   <div className="mx-n5 px-5 py-4" style={{backgroundColor: '#f2f2f2'}}>

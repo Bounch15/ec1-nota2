@@ -178,88 +178,6 @@ export function Carrito(){
                         </div>
                       </div>
                     </div>
-                    <div className="card mb-3">
-                      <div className="card-body">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex flex-row align-items-center">
-                            <div>
-                              <img src={chifaexpress} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
-                            </div>
-                            <div className="ms-3">
-                              <h5>Chaufa de pollo</h5>
-                              <p className="small mb-0">
-                                Meadiano con gaseosa
-                              </p>
-                            </div>
-                          </div>
-                          <div className="d-flex flex-row align-items-center">
-                            <div style={{width: '50px'}}>
-                              <h5 className="fw-normal mb-0">1</h5>
-                            </div>
-                            <div style={{width: '80px'}}>
-                              <h5 className="mb-0">S./24</h5>
-                            </div>
-                            <a href="#!" style={{color: '#cecece'}}>
-                              <i className="fas fa-trash-alt" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card mb-3">
-                      <div className="card-body">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex flex-row align-items-center">
-                            <div>
-                              <img src={listo} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
-                            </div>
-                            <div className="ms-3">
-                              <h5>Gaseosa Inka Cola</h5>
-                              <p className="small mb-0">750ml</p>
-                            </div>
-                          </div>
-                          <div className="d-flex flex-row align-items-center">
-                            <div style={{width: '50px'}}>
-                              <h5 className="fw-normal mb-0">1</h5>
-                            </div>
-                            <div style={{width: '80px'}}>
-                              <h5 className="mb-0">S./3</h5>
-                            </div>
-                            <a href="#!" style={{color: '#cecece'}}>
-                              <i className="fas fa-trash-alt" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card mb-3 mb-lg-0">
-                      <div className="card-body">
-                        <div className="d-flex justify-content-between">
-                          <div className="d-flex flex-row align-items-center">
-                            <div>
-                              <img src={neverafit} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
-                            </div>
-                            <div className="ms-3">
-                              <h5>Tres leches</h5>
-                              <p className="small mb-0">
-                                Tamaño standart
-                              </p>
-                            </div>
-                          </div>
-                          <div className="d-flex flex-row align-items-center">
-                            <div style={{width: '50px'}}>
-                              <h5 className="fw-normal mb-0">1</h5>
-                            </div>
-                            <div style={{width: '80px'}}>
-                              <h5 className="mb-0">S./12</h5>
-                            </div>
-                            <a href="#!" style={{color: '#cecece'}}>
-                              <i className="fas fa-trash-alt" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="col-lg-5">
                     <div className="card bg-primary text-white rounded-3">
@@ -288,13 +206,13 @@ export function Carrito(){
                           <div className="form-outline form-white mb-4">
                             <input type="text" id="typeName" className="form-control form-control-lg" siez={17} placeholder="Cardholder's Name" />
                             <label className="form-label" htmlFor="typeName">
-                              Cardholder's Name
+                              Nombre
                             </label>
                           </div>
                           <div className="form-outline form-white mb-4">
                             <input type="text" id="typeText" className="form-control form-control-lg" siez={17} placeholder="1234 5678 9012 3457" minLength={19} maxLength={19} />
                             <label className="form-label" htmlFor="typeText">
-                              Card Number
+                              Nombre de la tarjeta
                             </label>
                           </div>
                           <div className="row mb-4">
@@ -302,7 +220,7 @@ export function Carrito(){
                               <div className="form-outline form-white">
                                 <input type="text" id="typeExp" className="form-control form-control-lg" placeholder="MM/YYYY" size={7} minLength={7} maxLength={7} />
                                 <label className="form-label" htmlFor="typeExp">
-                                  Expiration
+                                  Fecha de vencimiento
                                 </label>
                               </div>
                             </div>
@@ -310,7 +228,7 @@ export function Carrito(){
                               <div className="form-outline form-white">
                                 <input type="password" id="typeText" className="form-control form-control-lg" placeholder="●●●" size={1} minLength={3} maxLength={3} />
                                 <label className="form-label" htmlFor="typeText">
-                                  Cvv
+                                  CVV
                                 </label>
                               </div>
                             </div>
@@ -319,20 +237,20 @@ export function Carrito(){
                         <hr className="my-4" />
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Subtotal</p>
-                          <p className="mb-2">S./62</p>
+                          <p className="mb-2">S./29</p>
                         </div>
                         <div className="d-flex justify-content-between">
-                          <p className="mb-2">Shipping</p>
-                          <p className="mb-2">S./6</p>
+                          <p className="mb-2">Envio</p>
+                          <p className="mb-2">S./5</p>
                         </div>
                         <div className="d-flex justify-content-between mb-4">
-                          <p className="mb-2">Total(Incl. taxes)</p>
-                          <p className="mb-2">S./68</p>
+                          <p className="mb-2">Total(Incl. impuestos)</p>
+                          <p className="mb-2">S./34</p>
                         </div>
                         <a href="/pedido.html">
                           <button type="button" className="btn btn-info btn-block btn-lg">
                             <div className="d-flex justify-content-between">
-                              <span>S/.68 Checkout</span>
+                              <span>S/.34 Checkout</span>
                               <span>
                                 <i className="fas fa-long-arrow-alt-right ms-2" />
                               </span>

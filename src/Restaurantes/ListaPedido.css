@@ -1,0 +1,23 @@
+.general{
+    font-family: 'Oxygen';
+    background: rgb(255,0,59);
+    background: radial-gradient(circle, rgba(255,0,59,1) 0%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    padding-top: 50px;
+    
+}
+.container{
+    padding-top: 10px;
+    font-size: 20px;
+}
+h1{
+    color: whitesmoke;
+}
+.botones{
+    text-align: center;
+}
+.botonesb{
+    padding-top:10px ;
+    text-align: center;
+
+}

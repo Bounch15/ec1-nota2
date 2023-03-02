@@ -1,15 +1,12 @@
 import { useNavigate } from "react-router-dom"
 import './Styles_Estadopedido.css';
-import codigopedido from "./CategoriasLocales";
+
 
 export function Estadopedido_Error(){
 
   const navigate = useNavigate()
 
-  const butOnClick1 = function() {
-    navigate("/ec1-nota2/CategoriasLocales_Bembos", {
-    }) 
-  }
+
   const butOnClick2 = function() {
     navigate("/ec1-nota2", {
     }) 
@@ -23,7 +20,7 @@ export function Estadopedido_Error(){
     }) 
   }
   const butOnClick5 = function() {
-    navigate("/ec1-nota2/CategoriaLocales", {
+    navigate("/ec1-nota2/Iniciorestaurante", {
     }) 
   }
   const butOnClick6 = function() {

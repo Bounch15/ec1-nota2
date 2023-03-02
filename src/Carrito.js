@@ -1,12 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import './Styles_Carrito.css';
-import bembos from './imagenes//logosrestaurantes/Bembos.png'
-import chifaexpress from './imagenes//logosrestaurantes/chifa express.png'
-import listo from './imagenes//logosrestaurantes/Listo.jpg'
-import marianne from './imagenes//logosrestaurantes/Marianne.png'
-import mrsushi from './imagenes//logosrestaurantes/MrSushi.png'
-import neverafit from './imagenes/logosrestaurantes/nevera fit.png'
-import starbucks from './imagenes//logosrestaurantes/Starbucks_Corporation_Logo_2011.svg.png'
+
 
 export function Carrito(){
 
@@ -30,7 +24,7 @@ export function Carrito(){
   }
 
   const butOnClick5 = function() {
-    navigate("/ec1-nota2/CategoriaLocales", {
+    navigate("/ec1-nota2/CategoriasLocales", {
     }) 
   }
 
@@ -154,9 +148,9 @@ export function Carrito(){
                       <div className="card-body">
                         <div className="d-flex justify-content-between">
                           <div className="d-flex flex-row align-items-center">
-                            <div>
+                            {/* <div>
                               <img src={bembos} className="img-fluid rounded-3" alt="Shopping item" style={{width: '65px'}} />
-                            </div>
+                            </div> */}
                             <div className="ms-3">
                               <h5>Hamburgesa cheese</h5>
                               <p className="small mb-0">

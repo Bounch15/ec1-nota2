@@ -13,7 +13,7 @@ function MainPage(){
     const obtenerCategoriasAsyncAwait = async function(){
         try{
             const response = await fetch(
-                "http://localhost:8000/endpoints/categorias/listar")
+                "https://djangoentrega4.azurewebsites.net/endpoints/categorias/listar")
             const data = await response.json()
             if(data.error ===""){
                 setListaCategorias(data.categorias)
@@ -29,7 +29,7 @@ function MainPage(){
     const filtrarRestaurante = async function (categoriaId){
         try {
             const response = await fetch(
-                `http://localhost:8000/endpoints/restaurantes/listar?categoria=${ categoriaId }`
+                `https://djangoentrega4.azurewebsites.net/endpoints/restaurantes/listar?categoria=${ categoriaId }`
             )
             const data = await response.json()
 

@@ -5,7 +5,7 @@ function LoginPage() {
     const navigate = useNavigate()
     const loginHttp = async function(usuario,password){
        const response = await fetch(
-        "http://localhost:8000/endpoints/login",
+        "https://djangoentrega4.azurewebsites.net/endpoints/login",
         {
             method : "POST",
             body : JSON.stringify(

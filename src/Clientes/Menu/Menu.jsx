@@ -17,7 +17,7 @@ function Menu(){
     const obtenerCategoriasAsyncAwait = async function(){
         try{
             const response = await fetch(
-                "http://localhost:8000/endpoints/platos/categorias"
+                "https://djangoentrega4.azurewebsites.net/endpoints/platos/categorias"
             )
             const data = await response.json()
             if(data.error ===""){

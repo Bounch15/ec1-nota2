@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ec1-nota2/static/css/main.09507e03.css",
-    "main.js": "/ec1-nota2/static/js/main.185d3252.js",
+    "main.js": "/ec1-nota2/static/js/main.542a95a3.js",
     "static/media/starbucks.png": "/ec1-nota2/static/media/starbucks.d5d39c5362e031e12ca1.png",
     "index.html": "/ec1-nota2/index.html",
     "main.09507e03.css.map": "/ec1-nota2/static/css/main.09507e03.css.map",
-    "main.185d3252.js.map": "/ec1-nota2/static/js/main.185d3252.js.map"
+    "main.542a95a3.js.map": "/ec1-nota2/static/js/main.542a95a3.js.map"
   },
   "entrypoints": [
     "static/css/main.09507e03.css",
-    "static/js/main.185d3252.js"
+    "static/js/main.542a95a3.js"
   ]
 }
